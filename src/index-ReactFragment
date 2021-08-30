@@ -1,0 +1,35 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+
+function Lake() {
+  return (
+    <h1>Lake !</h1>
+  );
+}
+
+function SkiResort(name) {
+  return (
+    <h1>SkiResort !</h1>
+  );
+}
+
+function App() {
+  // eslint-disable-next-line no-lone-blocks
+  return (
+    <>
+      <Lake />
+      <SkiResort />
+    </>
+  );
+  // return <SkiResort />;s
+}
+
+ReactDOM.render(
+  <>
+    <Lake />
+    <SkiResort />
+  </>,
+  document.getElementById('root')
+);
+
